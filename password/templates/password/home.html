@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>First Django Page</title>
+</head>
+<body>
+<h1>Password Generation Application</h1><br>
+<a href="{% url 'about' %}">About Us</a><br>
+<form action="{% url 'pd' %}">
+   <select name="length">
+    <option value="8">8</option>
+    <option value="9">9</option>
+    <option value="10">10</option>
+    <option value="11">11</option>
+    <option value="12" selected="selected">12</option>
+</select><br>
+UpperCase : <input type="checkbox" name="uppercase"><br>
+Numbers   : <input type="checkbox" name="numbers"><br>
+Special   : <input type="checkbox" name="special"><br>
+
+<input type="submit" value="Generate Password">
+</form>
+
+
+
+</body>
+</html>
